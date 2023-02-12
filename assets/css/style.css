@@ -1,1 +1,59 @@
-/*# sourceMappingURL=style.css.map */
+/* Body */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  width: 80vw;
+  margin: auto;
+}
+
+.site__background {
+  background-image: url("../../assets/images/logoklw.jpeg");
+  opacity: 0.2;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.navbar__ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar__link {
+  text-decoration: none;
+  color: black;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+.header__content--logo {
+  height: 11rem;
+  width: 11rem;
+  float: left;
+}
+
+.header__content--title {
+  display: inline-block;
+  margin: auto;
+}
+
+h1 {
+  font-size: 5rem;
+  font-family: "Frank Ruhl Libre", serif;
+  font-weight: bold;
+}/*# sourceMappingURL=style.css.map */

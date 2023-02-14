@@ -12,7 +12,7 @@ body {
 .site__background {
   background-image: url("../../assets/images/logoklw.jpeg");
   opacity: 0.2;
-  background-size: 50%;
+  background-size: 45%;
   background-repeat: no-repeat;
   background-position: center;
   position: fixed;
@@ -23,15 +23,28 @@ body {
   z-index: -1;
 }
 
+.carousel {
+  position: relative;
+  display: flex;
+  margin: auto;
+  width: 55rem;
+}
+
 .navbar__ul {
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  margin-bottom: 3rem;
+  margin-top: 0;
+  padding: 0;
 }
 
 .navbar__link {
   text-decoration: none;
   color: black;
+}
+.navbar__link:hover {
+  color: red;
 }
 
 .header__content {

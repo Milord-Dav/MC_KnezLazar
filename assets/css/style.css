@@ -27,14 +27,69 @@ body {
   position: relative;
   display: flex;
   margin: auto;
-  width: 55rem;
 }
 
+.slider {
+  display: flex;
+  min-width: 1600px;
+  min-height: 730px;
+  margin: auto;
+  align-items: center;
+  position: relative;
+}
+
+.slider_container {
+  height: 85%;
+  width: 93%;
+  /* transform: translate(-50%, -50%); */
+  /* top: 40%; */
+  left: 50%;
+  overflow: hidden;
+  /* border: 22px solid #ffffff; */
+  border-radius: 8px;
+  box-shadow: 10px 25px 30px rgba(0, 0, 0, 0.3);
+}
+
+.slider_wrapper {
+  width: 100%;
+  display: flex;
+  animation: slide 10s infinite;
+}
+
+img {
+  width: 100%;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(0);
+  }
+  30% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  55% {
+    transform: translateX(-100%);
+  }
+  75% {
+    transform: translateX(-100%);
+  }
+  80% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
 .navbar__ul {
   list-style: none;
   display: flex;
   justify-content: space-around;
-  margin-bottom: 3rem;
   margin-top: 0;
   padding: 0;
 }

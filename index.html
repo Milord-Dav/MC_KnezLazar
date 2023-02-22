@@ -8,7 +8,29 @@
       name="description"
       content="Site officiel du MotoClub Saint Lazar France"
     />
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script language="JavaScript" type="text/javascript">
+      $(document).ready(function () {
+        $(".carousel").carousel({
+          interval: 200,
+        });
+      });
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,216 +45,262 @@
   <body>
     <!-- background -->
     <div class="site__background"></div>
+    <!-- Navbar -->
+    <!-- <div class="header__navbar">
+      <ul class="navbar__ul">
+        <li><a class="navbar__link" href="#">Accueil</a></li>
+        <li><a class="navbar__link" href="#">Evenement</a></li>
+        <li><a class="navbar__link" href="#">Galerie</a></li>
+        <li><a class="navbar__link" href="#">Nous contacter</a></li>
+      </ul>
+    </div> -->
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <!-- Header -->
-    <header class="header">
-      <div class="header__content">
-        <div>
-          <img
-            class="header__content--logo"
-            src="assets/images/logoklw.jpeg"
-            alt="Logo_Saint_Lazar"
-          />
-        </div>
-        <div class="header__content--title">
-          <h1>Moto Club Saint Lazar</h1>
-        </div>
-      </div>
-      <!-- Navbar -->
-      <div class="header__navbar">
-        <ul class="navbar__ul">
-          <li><a class="navbar__link" href="#">Accueil</a></li>
-          <li><a class="navbar__link" href="#">Evenement</a></li>
-          <li><a class="navbar__link" href="#">Galerie</a></li>
-          <li><a class="navbar__link" href="#">Nous contacter</a></li>
-        </ul>
-      </div>
-    </header>
-    <!-- carousel -->
-    <div class="carousel">
-      <figure class="slider">
-        <div class="slider_container">
-          <div class="slider_wrapper">
-            <img src="assets/images/pic1.jpg" alt="clubmenbers" />
-            <img src="assets/images/pic2.jpg" alt="clubmenbers" />
+    <div class="page__wrapper">
+      <header class="header">
+        <div class="header__content">
+          <div>
+            <img
+              class="header__content--logo"
+              src="assets/images/logoklw.jpeg"
+              alt="Logo_Saint_Lazar"
+            />
+          </div>
+          <div class="header__content--title">
+            <h1>Moto Club Saint Lazar</h1>
           </div>
         </div>
-        <!-- <div class="slider_title">
+      </header>
+      <!-- carousel -->
+      <!-- <div class="carousel">
+        <figure class="slider">
+          <div class="slider_container">
+            <div class="slider_wrapper">
+              <img src="assets/images/pic1.jpg" alt="clubmenbers" />
+              <img src="assets/images/pic2.jpg" alt="clubmenbers" />
+            </div>
+          </div>
+          <div class="slider_title">
             <h1>
               <span style="color: #f18d08">Knez Lazar</span> Association de motards
             </h1>
             <span class="slider_caption"
               >Premiere association de motards Serbe a Paris</span
             >
-            <button class="slider_button">Plus d'info</button> -->
-      </figure>
+            <button class="slider_button">Plus d'info</button>
+        </figure>
+      </div> -->
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              class="bd-placeholder-img bd-placeholder-img-lg d-block w-100"
+              src="assets/images/pic1.jpg"
+              alt="test"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="bd-placeholder-img bd-placeholder-img-lg d-block w-100"
+              src="assets/images/pic2.jpg"
+              alt="test"
+            />
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#666"></rect>
+            <text x="50%" y="50%" fill="#444" dy=".3em">Second slide</text>
+          </div>
+          <div class="carousel-item">
+            <img
+              class="bd-placeholder-img bd-placeholder-img-lg d-block w-100"
+              src="assets/images/pic3.jpg"
+              alt="test"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <main class="main__content">
+        <p class="main__content--paragraphe">
+          Enim commodo fugiat quis laborum sunt dolor minim ad laborum non nisi
+          id cupidatat. Reprehenderit non qui minim ipsum et veniam sunt. Nulla
+          fugiat do mollit consectetur qui. Deserunt qui nulla culpa dolor
+          adipisicing mollit amet mollit exercitation consectetur mollit duis
+          consequat culpa. Nostrud minim minim duis ipsum occaecat reprehenderit
+          ad nisi et. Officia incididunt culpa ad incididunt commodo
+          exercitation cupidatat deserunt irure consequat culpa dolore. Qui qui
+          fugiat laboris et ipsum nostrud cupidatat commodo officia sint qui.
+        </p>
+        <p>
+          Enim commodo fugiat quis laborum sunt dolor minim ad laborum non nisi
+          id cupidatat. Reprehenderit non qui minim ipsum et veniam sunt. Nulla
+          fugiat do mollit consectetur qui. Deserunt qui nulla culpa dolor
+          adipisicing mollit amet mollit exercitation consectetur mollit duis
+          consequat culpa. Nostrud minim minim duis ipsum occaecat reprehenderit
+          ad nisi et. Officia incididunt culpa ad incididunt commodo
+          exercitation cupidatat deserunt irure consequat culpa dolore. Qui qui
+          fugiat laboris et ipsum nostrud cupidatat commodo officia sint qui.
+        </p>
+        <p>
+          Enim commodo fugiat quis laborum sunt dolor minim ad laborum non nisi
+          id cupidatat. Reprehenderit non qui minim ipsum et veniam sunt. Nulla
+          fugiat do mollit consectetur qui. Deserunt qui nulla culpa dolor
+          adipisicing mollit amet mollit exercitation consectetur mollit duis
+          consequat culpa. Nostrud minim minim duis ipsum occaecat reprehenderit
+          ad nisi et. Officia incididunt culpa ad incididunt commodo
+          exercitation cupidatat deserunt irure consequat culpa dolore. Qui qui
+          fugiat laboris et ipsum nostrud cupidatat commodo officia sint qui.
+        </p>
+        <p>
+          Enim commodo fugiat quis laborum sunt dolor minim ad laborum non nisi
+          id cupidatat. Reprehenderit non qui minim ipsum et veniam sunt. Nulla
+          fugiat do mollit consectetur qui. Deserunt qui nulla culpa dolor
+          adipisicing mollit amet mollit exercitation consectetur mollit duis
+          consequat culpa. Nostrud minim minim duis ipsum occaecat reprehenderit
+          ad nisi et. Officia incididunt culpa ad incididunt commodo
+          exercitation cupidatat deserunt irure consequat culpa dolore. Qui qui
+          fugiat laboris et ipsum nostrud cupidatat commodo officia sint qui.
+        </p>
+        <p>
+          Enim commodo fugiat quis laborum sunt dolor minim ad laborum non nisi
+          id cupidatat. Reprehenderit non qui minim ipsum et veniam sunt. Nulla
+          fugiat do mollit consectetur qui. Deserunt qui nulla culpa dolor
+          adipisicing mollit amet mollit exercitation consectetur mollit duis
+          consequat culpa. Nostrud minim minim duis ipsum occaecat reprehenderit
+          ad nisi et. Officia incididunt culpa ad incididunt commodo
+          exercitation cupidatat deserunt irure consequat culpa dolore. Qui qui
+          fugiat laboris et ipsum nostrud cupidatat commodo officia sint qui.
+        </p>
+        <p>
+          Enim commodo fugiat quis laborum sunt dolor minim ad laborum non nisi
+          id cupidatat. Reprehenderit non qui minim ipsum et veniam sunt. Nulla
+          fugiat do mollit consectetur qui. Deserunt qui nulla culpa dolor
+          adipisicing mollit amet mollit exercitation consectetur mollit duis
+          consequat culpa. Nostrud minim minim duis ipsum occaecat reprehenderit
+          ad nisi et. Officia incididunt culpa ad incididunt commodo
+          exercitation cupidatat deserunt irure consequat culpa dolore. Qui qui
+          fugiat laboris et ipsum nostrud cupidatat commodo officia sint qui.
+        </p>
+        <p>
+          Enim commodo fugiat quis laborum sunt dolor minim ad laborum non nisi
+          id cupidatat. Reprehenderit non qui minim ipsum et veniam sunt. Nulla
+          fugiat do mollit consectetur qui. Deserunt qui nulla culpa dolor
+          adipisicing mollit amet mollit exercitation consectetur mollit duis
+          consequat culpa. Nostrud minim minim duis ipsum occaecat reprehenderit
+          ad nisi et. Officia incididunt culpa ad incididunt commodo
+          exercitation cupidatat deserunt irure consequat culpa dolore. Qui qui
+          fugiat laboris et ipsum nostrud cupidatat commodo officia sint qui.
+        </p>
+        <p>
+          Enim commodo fugiat quis laborum sunt dolor minim ad laborum non nisi
+          id cupidatat. Reprehenderit non qui minim ipsum et veniam sunt. Nulla
+          fugiat do mollit consectetur qui. Deserunt qui nulla culpa dolor
+          adipisicing mollit amet mollit exercitation consectetur mollit duis
+          consequat culpa. Nostrud minim minim duis ipsum occaecat reprehenderit
+          ad nisi et. Officia incididunt culpa ad incididunt commodo
+          exercitation cupidatat deserunt irure consequat culpa dolore. Qui qui
+          fugiat laboris et ipsum nostrud cupidatat commodo officia sint qui.
+        </p>
+        <p>
+          Enim commodo fugiat quis laborum sunt dolor minim ad laborum non nisi
+          id cupidatat. Reprehenderit non qui minim ipsum et veniam sunt. Nulla
+          fugiat do mollit consectetur qui. Deserunt qui nulla culpa dolor
+          adipisicing mollit amet mollit exercitation consectetur mollit duis
+          consequat culpa. Nostrud minim minim duis ipsum occaecat reprehenderit
+          ad nisi et. Officia incididunt culpa ad incididunt commodo
+          exercitation cupidatat deserunt irure consequat culpa dolore. Qui qui
+          fugiat laboris et ipsum nostrud cupidatat commodo officia sint qui.
+        </p>
+        <p>
+          Enim commodo fugiat quis laborum sunt dolor minim ad laborum non nisi
+          id cupidatat. Reprehenderit non qui minim ipsum et veniam sunt. Nulla
+          fugiat do mollit consectetur qui. Deserunt qui nulla culpa dolor
+          adipisicing mollit amet mollit exercitation consectetur mollit duis
+          consequat culpa. Nostrud minim minim duis ipsum occaecat reprehenderit
+          ad nisi et. Officia incididunt culpa ad incididunt commodo
+          exercitation cupidatat deserunt irure consequat culpa dolore. Qui qui
+          fugiat laboris et ipsum nostrud cupidatat commodo officia sint qui.
+        </p>
+        <p>
+          Enim commodo fugiat quis laborum sunt dolor minim ad laborum non nisi
+          id cupidatat. Reprehenderit non qui minim ipsum et veniam sunt. Nulla
+          fugiat do mollit consectetur qui. Deserunt qui nulla culpa dolor
+          adipisicing mollit amet mollit exercitation consectetur mollit duis
+          consequat culpa. Nostrud minim minim duis ipsum occaecat reprehenderit
+          ad nisi et. Officia incididunt culpa ad incididunt commodo
+          exercitation cupidatat deserunt irure consequat culpa dolore. Qui qui
+          fugiat laboris et ipsum nostrud cupidatat commodo officia sint qui.
+        </p>
+      </main>
     </div>
-    <main class="main__content">
-      <p class="main__content--paragraphe">
-        Enim commodo fugiat quis laborum sunt dolor minim ad laborum non nisi id
-        cupidatat. Reprehenderit non qui minim ipsum et veniam sunt. Nulla
-        fugiat do mollit consectetur qui. Deserunt qui nulla culpa dolor
-        adipisicing mollit amet mollit exercitation consectetur mollit duis
-        consequat culpa. Nostrud minim minim duis ipsum occaecat reprehenderit
-        ad nisi et. Officia incididunt culpa ad incididunt commodo exercitation
-        cupidatat deserunt irure consequat culpa dolore. Qui qui fugiat laboris
-        et ipsum nostrud cupidatat commodo officia sint qui.
-      </p>
-      <p>
-        Enim commodo fugiat quis laborum sunt dolor minim ad laborum non nisi id
-        cupidatat. Reprehenderit non qui minim ipsum et veniam sunt. Nulla
-        fugiat do mollit consectetur qui. Deserunt qui nulla culpa dolor
-        adipisicing mollit amet mollit exercitation consectetur mollit duis
-        consequat culpa. Nostrud minim minim duis ipsum occaecat reprehenderit
-        ad nisi et. Officia incididunt culpa ad incididunt commodo exercitation
-        cupidatat deserunt irure consequat culpa dolore. Qui qui fugiat laboris
-        et ipsum nostrud cupidatat commodo officia sint qui.
-      </p>
-      <p>
-        Enim commodo fugiat quis laborum sunt dolor minim ad laborum non nisi id
-        cupidatat. Reprehenderit non qui minim ipsum et veniam sunt. Nulla
-        fugiat do mollit consectetur qui. Deserunt qui nulla culpa dolor
-        adipisicing mollit amet mollit exercitation consectetur mollit duis
-        consequat culpa. Nostrud minim minim duis ipsum occaecat reprehenderit
-        ad nisi et. Officia incididunt culpa ad incididunt commodo exercitation
-        cupidatat deserunt irure consequat culpa dolore. Qui qui fugiat laboris
-        et ipsum nostrud cupidatat commodo officia sint qui.
-      </p>
-      <p>
-        Enim commodo fugiat quis laborum sunt dolor minim ad laborum non nisi id
-        cupidatat. Reprehenderit non qui minim ipsum et veniam sunt. Nulla
-        fugiat do mollit consectetur qui. Deserunt qui nulla culpa dolor
-        adipisicing mollit amet mollit exercitation consectetur mollit duis
-        consequat culpa. Nostrud minim minim duis ipsum occaecat reprehenderit
-        ad nisi et. Officia incididunt culpa ad incididunt commodo exercitation
-        cupidatat deserunt irure consequat culpa dolore. Qui qui fugiat laboris
-        et ipsum nostrud cupidatat commodo officia sint qui.
-      </p>
-      <p>
-        Enim commodo fugiat quis laborum sunt dolor minim ad laborum non nisi id
-        cupidatat. Reprehenderit non qui minim ipsum et veniam sunt. Nulla
-        fugiat do mollit consectetur qui. Deserunt qui nulla culpa dolor
-        adipisicing mollit amet mollit exercitation consectetur mollit duis
-        consequat culpa. Nostrud minim minim duis ipsum occaecat reprehenderit
-        ad nisi et. Officia incididunt culpa ad incididunt commodo exercitation
-        cupidatat deserunt irure consequat culpa dolore. Qui qui fugiat laboris
-        et ipsum nostrud cupidatat commodo officia sint qui.
-      </p>
-      <p>
-        Enim commodo fugiat quis laborum sunt dolor minim ad laborum non nisi id
-        cupidatat. Reprehenderit non qui minim ipsum et veniam sunt. Nulla
-        fugiat do mollit consectetur qui. Deserunt qui nulla culpa dolor
-        adipisicing mollit amet mollit exercitation consectetur mollit duis
-        consequat culpa. Nostrud minim minim duis ipsum occaecat reprehenderit
-        ad nisi et. Officia incididunt culpa ad incididunt commodo exercitation
-        cupidatat deserunt irure consequat culpa dolore. Qui qui fugiat laboris
-        et ipsum nostrud cupidatat commodo officia sint qui.
-      </p>
-      <p>
-        Enim commodo fugiat quis laborum sunt dolor minim ad laborum non nisi id
-        cupidatat. Reprehenderit non qui minim ipsum et veniam sunt. Nulla
-        fugiat do mollit consectetur qui. Deserunt qui nulla culpa dolor
-        adipisicing mollit amet mollit exercitation consectetur mollit duis
-        consequat culpa. Nostrud minim minim duis ipsum occaecat reprehenderit
-        ad nisi et. Officia incididunt culpa ad incididunt commodo exercitation
-        cupidatat deserunt irure consequat culpa dolore. Qui qui fugiat laboris
-        et ipsum nostrud cupidatat commodo officia sint qui.
-      </p>
-      <p>
-        Enim commodo fugiat quis laborum sunt dolor minim ad laborum non nisi id
-        cupidatat. Reprehenderit non qui minim ipsum et veniam sunt. Nulla
-        fugiat do mollit consectetur qui. Deserunt qui nulla culpa dolor
-        adipisicing mollit amet mollit exercitation consectetur mollit duis
-        consequat culpa. Nostrud minim minim duis ipsum occaecat reprehenderit
-        ad nisi et. Officia incididunt culpa ad incididunt commodo exercitation
-        cupidatat deserunt irure consequat culpa dolore. Qui qui fugiat laboris
-        et ipsum nostrud cupidatat commodo officia sint qui.
-      </p>
-      <p>
-        Enim commodo fugiat quis laborum sunt dolor minim ad laborum non nisi id
-        cupidatat. Reprehenderit non qui minim ipsum et veniam sunt. Nulla
-        fugiat do mollit consectetur qui. Deserunt qui nulla culpa dolor
-        adipisicing mollit amet mollit exercitation consectetur mollit duis
-        consequat culpa. Nostrud minim minim duis ipsum occaecat reprehenderit
-        ad nisi et. Officia incididunt culpa ad incididunt commodo exercitation
-        cupidatat deserunt irure consequat culpa dolore. Qui qui fugiat laboris
-        et ipsum nostrud cupidatat commodo officia sint qui.
-      </p>
-      <p>
-        Enim commodo fugiat quis laborum sunt dolor minim ad laborum non nisi id
-        cupidatat. Reprehenderit non qui minim ipsum et veniam sunt. Nulla
-        fugiat do mollit consectetur qui. Deserunt qui nulla culpa dolor
-        adipisicing mollit amet mollit exercitation consectetur mollit duis
-        consequat culpa. Nostrud minim minim duis ipsum occaecat reprehenderit
-        ad nisi et. Officia incididunt culpa ad incididunt commodo exercitation
-        cupidatat deserunt irure consequat culpa dolore. Qui qui fugiat laboris
-        et ipsum nostrud cupidatat commodo officia sint qui.
-      </p>
-      <p>
-        Enim commodo fugiat quis laborum sunt dolor minim ad laborum non nisi id
-        cupidatat. Reprehenderit non qui minim ipsum et veniam sunt. Nulla
-        fugiat do mollit consectetur qui. Deserunt qui nulla culpa dolor
-        adipisicing mollit amet mollit exercitation consectetur mollit duis
-        consequat culpa. Nostrud minim minim duis ipsum occaecat reprehenderit
-        ad nisi et. Officia incididunt culpa ad incididunt commodo exercitation
-        cupidatat deserunt irure consequat culpa dolore. Qui qui fugiat laboris
-        et ipsum nostrud cupidatat commodo officia sint qui.
-      </p>
-      <p>
-        Enim commodo fugiat quis laborum sunt dolor minim ad laborum non nisi id
-        cupidatat. Reprehenderit non qui minim ipsum et veniam sunt. Nulla
-        fugiat do mollit consectetur qui. Deserunt qui nulla culpa dolor
-        adipisicing mollit amet mollit exercitation consectetur mollit duis
-        consequat culpa. Nostrud minim minim duis ipsum occaecat reprehenderit
-        ad nisi et. Officia incididunt culpa ad incididunt commodo exercitation
-        cupidatat deserunt irure consequat culpa dolore. Qui qui fugiat laboris
-        et ipsum nostrud cupidatat commodo officia sint qui.
-      </p>
-      <p>
-        Enim commodo fugiat quis laborum sunt dolor minim ad laborum non nisi id
-        cupidatat. Reprehenderit non qui minim ipsum et veniam sunt. Nulla
-        fugiat do mollit consectetur qui. Deserunt qui nulla culpa dolor
-        adipisicing mollit amet mollit exercitation consectetur mollit duis
-        consequat culpa. Nostrud minim minim duis ipsum occaecat reprehenderit
-        ad nisi et. Officia incididunt culpa ad incididunt commodo exercitation
-        cupidatat deserunt irure consequat culpa dolore. Qui qui fugiat laboris
-        et ipsum nostrud cupidatat commodo officia sint qui.
-      </p>
-      <p>
-        Enim commodo fugiat quis laborum sunt dolor minim ad laborum non nisi id
-        cupidatat. Reprehenderit non qui minim ipsum et veniam sunt. Nulla
-        fugiat do mollit consectetur qui. Deserunt qui nulla culpa dolor
-        adipisicing mollit amet mollit exercitation consectetur mollit duis
-        consequat culpa. Nostrud minim minim duis ipsum occaecat reprehenderit
-        ad nisi et. Officia incididunt culpa ad incididunt commodo exercitation
-        cupidatat deserunt irure consequat culpa dolore. Qui qui fugiat laboris
-        et ipsum nostrud cupidatat commodo officia sint qui.
-      </p>
-      <p>
-        Enim commodo fugiat quis laborum sunt dolor minim ad laborum non nisi id
-        cupidatat. Reprehenderit non qui minim ipsum et veniam sunt. Nulla
-        fugiat do mollit consectetur qui. Deserunt qui nulla culpa dolor
-        adipisicing mollit amet mollit exercitation consectetur mollit duis
-        consequat culpa. Nostrud minim minim duis ipsum occaecat reprehenderit
-        ad nisi et. Officia incididunt culpa ad incididunt commodo exercitation
-        cupidatat deserunt irure consequat culpa dolore. Qui qui fugiat laboris
-        et ipsum nostrud cupidatat commodo officia sint qui.
-      </p>
-      <p>
-        Enim commodo fugiat quis laborum sunt dolor minim ad laborum non nisi id
-        cupidatat. Reprehenderit non qui minim ipsum et veniam sunt. Nulla
-        fugiat do mollit consectetur qui. Deserunt qui nulla culpa dolor
-        adipisicing mollit amet mollit exercitation consectetur mollit duis
-        consequat culpa. Nostrud minim minim duis ipsum occaecat reprehenderit
-        ad nisi et. Officia incididunt culpa ad incididunt commodo exercitation
-        cupidatat deserunt irure consequat culpa dolore. Qui qui fugiat laboris
-        et ipsum nostrud cupidatat commodo officia sint qui.
-      </p>
-    </main>
-    <!-- <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script> -->
-    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

@@ -148,6 +148,10 @@ div.desc {
      object-fit: cover;
 }
 
+.gallery_content {
+  margin-top: 5%;
+}
+
 .navbar__ul {
   list-style: none;
   display: flex;

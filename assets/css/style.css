@@ -55,8 +55,7 @@ body {
 .slider_wrapper {
   width: 100%;
   display: flex;
-  -webkit-animation: slide 10s infinite;
-          animation: slide 10s infinite;
+  animation: slide 10s infinite;
 }
 
 .slide {
@@ -65,33 +64,6 @@ body {
 
 img {
   width: 100%;
-}
-
-@-webkit-keyframes slide {
-  0% {
-    transform: translateX(0);
-  }
-  25% {
-    transform: translateX(0);
-  }
-  30% {
-    transform: translateX(-100%);
-  }
-  50% {
-    transform: translateX(-100%);
-  }
-  55% {
-    transform: translateX(-100%);
-  }
-  75% {
-    transform: translateX(-100%);
-  }
-  80% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(0%);
-  }
 }
 
 @keyframes slide {
@@ -167,6 +139,13 @@ div.desc {
   content: "";
   display: table;
   clear: both;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 40vh;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .navbar__ul {

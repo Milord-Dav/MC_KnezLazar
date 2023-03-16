@@ -24,16 +24,10 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
-    <script language="JavaScript" type="text/javascript">
-      $(document).ready(function () {
-        $(".carousel")
-          .carousel({
-            interval: 5000,
-            pause: "false",
-          })
-          .carousel("cycle");
-      });
-    </script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
+    />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -132,7 +126,10 @@
             />
           </div>
           <div class="header__content--title">
-            <h1>Association Saint Lazar</h1>
+            <h1 class="header__content--h1">
+              Association <br />
+              Saint Lazar
+            </h1>
           </div>
         </div>
       </header>
@@ -141,7 +138,7 @@
         <div class="container">
           <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
-              <div class="card h-100 text-center">
+              <div class="card h-100 text-center shadow p-3 mb-5">
                 <img
                   src="../assets/pictures/kerber/kerber(8).jpeg"
                   class="card-img-top img-fluid"
@@ -161,7 +158,7 @@
               </div>
             </div>
             <div class="col">
-              <div class="card h-100 text-center">
+              <div class="card h-100 text-center shadow p-3 mb-5">
                 <img
                   src="..//assets/pictures/krst/krst (7).jpeg"
                   class="card-img-top img-fluid"
@@ -186,7 +183,7 @@
               </div>
             </div>
             <div class="col">
-              <div class="card h-100 text-center">
+              <div class="card h-100 text-center shadow p-3 mb-5">
                 <img
                   src="../assets/pictures/reunion/reunion (10).jpeg"
                   class="card-img-top img-fluid"
@@ -205,7 +202,7 @@
               </div>
             </div>
             <div class="col">
-              <div class="card h-100 text-center">
+              <div class="card h-100 text-center shadow p-3 mb-5">
                 <img
                   src="../assets/pictures/divers/diver (6).jpeg"
                   class="card-img-top img-fluid"
@@ -230,6 +227,24 @@
         </div>
       </main>
     </div>
-    <footer class="Footer"></footer>
+    <div class="footer-basic">
+      <footer>
+        <div class="social">
+          <a
+            href="https://www.facebook.com/groups/239045407650725/"
+            target="_blank"
+            ><i class="icon ion-social-facebook"></i></a
+          ><a href="#"><i class="icon ion-social-instagram"></i></a>
+        </div>
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <a href="mailto:assos.saint.lazar93@gmail.com">Contacté nous</a>
+          </li>
+        </ul>
+        <p class="copyright">Association Saint-Lazar © 2023</p>
+      </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

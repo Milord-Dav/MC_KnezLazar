@@ -272,6 +272,47 @@ div.desc {
   margin-bottom: 0;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.portfolio-menu {
+  text-align: center;
+}
+
+.portfolio-menu ul li {
+  display: inline-block;
+  margin: 0;
+  list-style: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.portfolio-item {
+  width: 100%;
+  margin: auto;
+}
+
+.portfolio-item .item {
+  float: left;
+  margin-bottom: 10px;
+}
+
+.img__container {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+}
+
+.img {
+  width: 600px;
+  height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .navbar__ul {
   list-style: none;
   display: flex;

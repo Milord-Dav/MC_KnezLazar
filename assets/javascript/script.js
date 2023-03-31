@@ -2,8 +2,8 @@
 $(document).ready(function () {
   $(".carousel")
     .carousel({
-      interval: 5000,
-      pause: "false",
+      interval: 6000,
+      pause: "hover",
     })
     .carousel("cycle");
 });

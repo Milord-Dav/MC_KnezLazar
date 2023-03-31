@@ -92,6 +92,24 @@ img {
     transform: translateX(0%);
   }
 }
+.carousel-control-prev {
+  color: darkgray;
+}
+
+.carousel-control-prev:hover {
+  color: navy;
+  font-weight: bold;
+}
+
+.carousel-control-next {
+  color: darkgray;
+}
+
+.carousel-control-next:hover {
+  color: navy;
+  font-weight: bold;
+}
+
 .main__content {
   display: flex;
   flex-direction: column;
@@ -144,6 +162,15 @@ div.desc {
   }
   .col .card-body .card-title {
     font-size: 1.5vw;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .card-text {
+    display: -webkit-box !important;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    font-size: 1.2vw;
   }
 }
 .clearfix:after {

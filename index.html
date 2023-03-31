@@ -8,7 +8,54 @@
       name="description"
       content="Site officiel du MotoClub Saint Lazar France"
     />
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
+    />
+    <!-- <script language="JavaScript" type="text/javascript">
+      $(document).ready(function () {
+        $(".carousel")
+          .carousel({
+            interval: 5000,
+            pause: "false",
+          })
+          .carousel("cycle");
+      });
+    </script> -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,222 +64,197 @@
       href="https://fonts.googleapis.com/css2?family=Domine:wght@400;500&family=Frank+Ruhl+Libre:wght@400;600;700&family=Kreon:wght@300&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <title>MC Knez Lazar - Paris</title>
+    <title>Knez Lazar - Paris</title>
   </head>
   <body>
     <!-- background -->
     <div class="site__background"></div>
+    <!-- Navbar -->
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <!-- <a class="navbar-brand" href="#">Knez Lazar</a> -->
+        <button
+          class="navbar-toggler mb-3"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item px-4">
+              <a class="nav-link" aria-current="page" href="index.html"
+                ><span class="material-symbols-outlined align-bottom p-1">
+                  home </span
+                >Accueil</a
+              >
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link disabled" href="#"
+                ><span class="material-symbols-outlined align-bottom p-1">
+                  event </span
+                >Evenements</a
+              >
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link" href="pages/gallery.html"
+                ><span class="material-symbols-outlined align-bottom p-1">
+                  photo_library </span
+                >Galerie</a
+              >
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link" href="#footer"
+                ><span class="material-symbols-outlined align-bottom p-1">
+                  contact_page </span
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <!-- Header -->
-    <header class="header">
-      <div class="header__content">
-        <div>
-          <img
-            class="header__content--logo"
-            src="assets/images/logoklw.jpeg"
-            alt="Logo_Saint_Lazar"
-          />
-        </div>
-        <div class="header__content--title">
-          <h1>Moto Club Saint Lazar</h1>
-        </div>
-      </div>
-      <!-- Navbar -->
-      <div class="header__navbar">
-        <ul class="navbar__ul">
-          <li><a class="navbar__link" href="#">Accueil</a></li>
-          <li><a class="navbar__link" href="#">Evenement</a></li>
-          <li><a class="navbar__link" href="#">Galerie</a></li>
-          <li><a class="navbar__link" href="#">Nous contacter</a></li>
-        </ul>
-      </div>
-    </header>
-    <!-- carousel -->
-    <div class="carousel">
-      <figure class="slider">
-        <div class="slider_container">
-          <div class="slider_wrapper">
-            <img src="assets/images/pic1.jpg" alt="clubmenbers" />
-            <img src="assets/images/pic2.jpg" alt="clubmenbers" />
+    <div class="page__wrapper">
+      <header class="header">
+        <div class="header__content">
+          <div>
+            <img
+              class="header__content--logo"
+              src="assets/images/logoklw.jpeg"
+              alt="Logo_Saint_Lazar"
+            />
+          </div>
+          <div class="header__content--title">
+            <h1 class="header__content--h1">
+              Association <br />
+              Saint Lazar
+            </h1>
           </div>
         </div>
-        <!-- <div class="slider_title">
-            <h1>
-              <span style="color: #f18d08">Knez Lazar</span> Association de motards
-            </h1>
-            <span class="slider_caption"
-              >Premiere association de motards Serbe a Paris</span
-            >
-            <button class="slider_button">Plus d'info</button> -->
-      </figure>
+      </header>
+      <!-- Carousel -->
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              class="w-100"
+              src="assets/images/pic3.png"
+              alt="carousel pictures"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="w-100"
+              src="assets/images/pic2.jpg"
+              alt="carousel pictures"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="w-100"
+              src="assets/images/carousel3.png"
+              alt="carousel pictures"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- content -->
+      <main class="main__content">
+        <p class="main__content--paragraphe">
+          "Le nom de l'association est "Asso des motards Saint-Lazar". Fondée en
+          2023, elle est composée de motards franco-serbes passionnés par les
+          deux-roues. L'objectif de l'association est de promouvoir la culture
+          motarde et de renforcer les liens entre la France et la Serbie à
+          travers des événements et des rassemblements. L'association organise
+          régulièrement des sorties à moto pour ses membres, ainsi que des
+          événements tels que des rencontres avec d'autres associations de
+          motards ou des concerts. En outre, l'association soutient les
+          initiatives caritatives en lien avec l'univers de la moto et la
+          culture Serbe. Les membres de l'association sont unis par leur passion
+          commune pour la moto et leur désir de découvrir de nouveaux horizons,
+          de partager leur expérience et de promouvoir une image positive des
+          motards. L'association est ouverte à tous les motards, qu'ils soient
+          français, serbes ou d'autres nationalités, et accueille les nouveaux
+          membres avec plaisir."
+        </p>
+      </main>
     </div>
-    <main class="main__content">
-      <p class="main__content--paragraphe">
-        Enim commodo fugiat quis laborum sunt dolor minim ad laborum non nisi id
-        cupidatat. Reprehenderit non qui minim ipsum et veniam sunt. Nulla
-        fugiat do mollit consectetur qui. Deserunt qui nulla culpa dolor
-        adipisicing mollit amet mollit exercitation consectetur mollit duis
-        consequat culpa. Nostrud minim minim duis ipsum occaecat reprehenderit
-        ad nisi et. Officia incididunt culpa ad incididunt commodo exercitation
-        cupidatat deserunt irure consequat culpa dolore. Qui qui fugiat laboris
-        et ipsum nostrud cupidatat commodo officia sint qui.
-      </p>
-      <p>
-        Enim commodo fugiat quis laborum sunt dolor minim ad laborum non nisi id
-        cupidatat. Reprehenderit non qui minim ipsum et veniam sunt. Nulla
-        fugiat do mollit consectetur qui. Deserunt qui nulla culpa dolor
-        adipisicing mollit amet mollit exercitation consectetur mollit duis
-        consequat culpa. Nostrud minim minim duis ipsum occaecat reprehenderit
-        ad nisi et. Officia incididunt culpa ad incididunt commodo exercitation
-        cupidatat deserunt irure consequat culpa dolore. Qui qui fugiat laboris
-        et ipsum nostrud cupidatat commodo officia sint qui.
-      </p>
-      <p>
-        Enim commodo fugiat quis laborum sunt dolor minim ad laborum non nisi id
-        cupidatat. Reprehenderit non qui minim ipsum et veniam sunt. Nulla
-        fugiat do mollit consectetur qui. Deserunt qui nulla culpa dolor
-        adipisicing mollit amet mollit exercitation consectetur mollit duis
-        consequat culpa. Nostrud minim minim duis ipsum occaecat reprehenderit
-        ad nisi et. Officia incididunt culpa ad incididunt commodo exercitation
-        cupidatat deserunt irure consequat culpa dolore. Qui qui fugiat laboris
-        et ipsum nostrud cupidatat commodo officia sint qui.
-      </p>
-      <p>
-        Enim commodo fugiat quis laborum sunt dolor minim ad laborum non nisi id
-        cupidatat. Reprehenderit non qui minim ipsum et veniam sunt. Nulla
-        fugiat do mollit consectetur qui. Deserunt qui nulla culpa dolor
-        adipisicing mollit amet mollit exercitation consectetur mollit duis
-        consequat culpa. Nostrud minim minim duis ipsum occaecat reprehenderit
-        ad nisi et. Officia incididunt culpa ad incididunt commodo exercitation
-        cupidatat deserunt irure consequat culpa dolore. Qui qui fugiat laboris
-        et ipsum nostrud cupidatat commodo officia sint qui.
-      </p>
-      <p>
-        Enim commodo fugiat quis laborum sunt dolor minim ad laborum non nisi id
-        cupidatat. Reprehenderit non qui minim ipsum et veniam sunt. Nulla
-        fugiat do mollit consectetur qui. Deserunt qui nulla culpa dolor
-        adipisicing mollit amet mollit exercitation consectetur mollit duis
-        consequat culpa. Nostrud minim minim duis ipsum occaecat reprehenderit
-        ad nisi et. Officia incididunt culpa ad incididunt commodo exercitation
-        cupidatat deserunt irure consequat culpa dolore. Qui qui fugiat laboris
-        et ipsum nostrud cupidatat commodo officia sint qui.
-      </p>
-      <p>
-        Enim commodo fugiat quis laborum sunt dolor minim ad laborum non nisi id
-        cupidatat. Reprehenderit non qui minim ipsum et veniam sunt. Nulla
-        fugiat do mollit consectetur qui. Deserunt qui nulla culpa dolor
-        adipisicing mollit amet mollit exercitation consectetur mollit duis
-        consequat culpa. Nostrud minim minim duis ipsum occaecat reprehenderit
-        ad nisi et. Officia incididunt culpa ad incididunt commodo exercitation
-        cupidatat deserunt irure consequat culpa dolore. Qui qui fugiat laboris
-        et ipsum nostrud cupidatat commodo officia sint qui.
-      </p>
-      <p>
-        Enim commodo fugiat quis laborum sunt dolor minim ad laborum non nisi id
-        cupidatat. Reprehenderit non qui minim ipsum et veniam sunt. Nulla
-        fugiat do mollit consectetur qui. Deserunt qui nulla culpa dolor
-        adipisicing mollit amet mollit exercitation consectetur mollit duis
-        consequat culpa. Nostrud minim minim duis ipsum occaecat reprehenderit
-        ad nisi et. Officia incididunt culpa ad incididunt commodo exercitation
-        cupidatat deserunt irure consequat culpa dolore. Qui qui fugiat laboris
-        et ipsum nostrud cupidatat commodo officia sint qui.
-      </p>
-      <p>
-        Enim commodo fugiat quis laborum sunt dolor minim ad laborum non nisi id
-        cupidatat. Reprehenderit non qui minim ipsum et veniam sunt. Nulla
-        fugiat do mollit consectetur qui. Deserunt qui nulla culpa dolor
-        adipisicing mollit amet mollit exercitation consectetur mollit duis
-        consequat culpa. Nostrud minim minim duis ipsum occaecat reprehenderit
-        ad nisi et. Officia incididunt culpa ad incididunt commodo exercitation
-        cupidatat deserunt irure consequat culpa dolore. Qui qui fugiat laboris
-        et ipsum nostrud cupidatat commodo officia sint qui.
-      </p>
-      <p>
-        Enim commodo fugiat quis laborum sunt dolor minim ad laborum non nisi id
-        cupidatat. Reprehenderit non qui minim ipsum et veniam sunt. Nulla
-        fugiat do mollit consectetur qui. Deserunt qui nulla culpa dolor
-        adipisicing mollit amet mollit exercitation consectetur mollit duis
-        consequat culpa. Nostrud minim minim duis ipsum occaecat reprehenderit
-        ad nisi et. Officia incididunt culpa ad incididunt commodo exercitation
-        cupidatat deserunt irure consequat culpa dolore. Qui qui fugiat laboris
-        et ipsum nostrud cupidatat commodo officia sint qui.
-      </p>
-      <p>
-        Enim commodo fugiat quis laborum sunt dolor minim ad laborum non nisi id
-        cupidatat. Reprehenderit non qui minim ipsum et veniam sunt. Nulla
-        fugiat do mollit consectetur qui. Deserunt qui nulla culpa dolor
-        adipisicing mollit amet mollit exercitation consectetur mollit duis
-        consequat culpa. Nostrud minim minim duis ipsum occaecat reprehenderit
-        ad nisi et. Officia incididunt culpa ad incididunt commodo exercitation
-        cupidatat deserunt irure consequat culpa dolore. Qui qui fugiat laboris
-        et ipsum nostrud cupidatat commodo officia sint qui.
-      </p>
-      <p>
-        Enim commodo fugiat quis laborum sunt dolor minim ad laborum non nisi id
-        cupidatat. Reprehenderit non qui minim ipsum et veniam sunt. Nulla
-        fugiat do mollit consectetur qui. Deserunt qui nulla culpa dolor
-        adipisicing mollit amet mollit exercitation consectetur mollit duis
-        consequat culpa. Nostrud minim minim duis ipsum occaecat reprehenderit
-        ad nisi et. Officia incididunt culpa ad incididunt commodo exercitation
-        cupidatat deserunt irure consequat culpa dolore. Qui qui fugiat laboris
-        et ipsum nostrud cupidatat commodo officia sint qui.
-      </p>
-      <p>
-        Enim commodo fugiat quis laborum sunt dolor minim ad laborum non nisi id
-        cupidatat. Reprehenderit non qui minim ipsum et veniam sunt. Nulla
-        fugiat do mollit consectetur qui. Deserunt qui nulla culpa dolor
-        adipisicing mollit amet mollit exercitation consectetur mollit duis
-        consequat culpa. Nostrud minim minim duis ipsum occaecat reprehenderit
-        ad nisi et. Officia incididunt culpa ad incididunt commodo exercitation
-        cupidatat deserunt irure consequat culpa dolore. Qui qui fugiat laboris
-        et ipsum nostrud cupidatat commodo officia sint qui.
-      </p>
-      <p>
-        Enim commodo fugiat quis laborum sunt dolor minim ad laborum non nisi id
-        cupidatat. Reprehenderit non qui minim ipsum et veniam sunt. Nulla
-        fugiat do mollit consectetur qui. Deserunt qui nulla culpa dolor
-        adipisicing mollit amet mollit exercitation consectetur mollit duis
-        consequat culpa. Nostrud minim minim duis ipsum occaecat reprehenderit
-        ad nisi et. Officia incididunt culpa ad incididunt commodo exercitation
-        cupidatat deserunt irure consequat culpa dolore. Qui qui fugiat laboris
-        et ipsum nostrud cupidatat commodo officia sint qui.
-      </p>
-      <p>
-        Enim commodo fugiat quis laborum sunt dolor minim ad laborum non nisi id
-        cupidatat. Reprehenderit non qui minim ipsum et veniam sunt. Nulla
-        fugiat do mollit consectetur qui. Deserunt qui nulla culpa dolor
-        adipisicing mollit amet mollit exercitation consectetur mollit duis
-        consequat culpa. Nostrud minim minim duis ipsum occaecat reprehenderit
-        ad nisi et. Officia incididunt culpa ad incididunt commodo exercitation
-        cupidatat deserunt irure consequat culpa dolore. Qui qui fugiat laboris
-        et ipsum nostrud cupidatat commodo officia sint qui.
-      </p>
-      <p>
-        Enim commodo fugiat quis laborum sunt dolor minim ad laborum non nisi id
-        cupidatat. Reprehenderit non qui minim ipsum et veniam sunt. Nulla
-        fugiat do mollit consectetur qui. Deserunt qui nulla culpa dolor
-        adipisicing mollit amet mollit exercitation consectetur mollit duis
-        consequat culpa. Nostrud minim minim duis ipsum occaecat reprehenderit
-        ad nisi et. Officia incididunt culpa ad incididunt commodo exercitation
-        cupidatat deserunt irure consequat culpa dolore. Qui qui fugiat laboris
-        et ipsum nostrud cupidatat commodo officia sint qui.
-      </p>
-      <p>
-        Enim commodo fugiat quis laborum sunt dolor minim ad laborum non nisi id
-        cupidatat. Reprehenderit non qui minim ipsum et veniam sunt. Nulla
-        fugiat do mollit consectetur qui. Deserunt qui nulla culpa dolor
-        adipisicing mollit amet mollit exercitation consectetur mollit duis
-        consequat culpa. Nostrud minim minim duis ipsum occaecat reprehenderit
-        ad nisi et. Officia incididunt culpa ad incididunt commodo exercitation
-        cupidatat deserunt irure consequat culpa dolore. Qui qui fugiat laboris
-        et ipsum nostrud cupidatat commodo officia sint qui.
-      </p>
-    </main>
-    <!-- <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script> -->
-    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <div class="footer-basic">
+      <footer id="footer">
+        <div class="social">
+          <a
+            href="https://www.facebook.com/groups/239045407650725/"
+            target="_blank"
+            ><i class="icon ion-social-facebook"></i></a
+          ><a href="#"><i class="icon ion-social-instagram"></i></a>
+        </div>
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <a href="mailto:assos.saint.lazar93@gmail.com">Contacter nous</a>
+          </li>
+        </ul>
+        <p class="copyright">Association Saint-Lazar © 2023</p>
+      </footer>
+    </div>
+    <!-- on top btn -->
+    <button onclick="topFunction()" id="upBtn" title="Go to top">
+      <span class="material-symbols-outlined align-bottom p-1">
+        arrow_upward
+      </span>
+    </button>
+    <script src="assets/javascript/script.js"></script>
   </body>
 </html>

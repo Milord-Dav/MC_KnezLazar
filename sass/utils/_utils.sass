@@ -3,13 +3,37 @@
 .navbar__ul
   list-style: none
   display: flex
-  justify-content: space-around
+  justify-content: space-between
   margin-top: 0
   padding: 0
 
+.nav-item:hover 
+  background-color: #e6e0e0
+  border-radius: 15px
+  transition: .3s
 
-.navbar__link
-  text-decoration: none
-  color: black
-  &:hover
-    color: red
+.nav-link:hover 
+  color: navy
+
+
+
+// buttons
+
+#upBtn 
+  display: none 
+  position: fixed 
+  bottom: 20px 
+  right: 20px 
+  z-index: 99 
+  border: none 
+  outline: none 
+  background-color: grey
+  color: white 
+  cursor: pointer
+  // padding: 15px 
+  border-radius: 15px 
+  // font-size: 18px 
+
+
+#upBtn:hover 
+  background-color: #555 
